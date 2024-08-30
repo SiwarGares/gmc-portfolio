@@ -1,0 +1,831 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root
+{
+    --primary-color-orange :  #FD6F00;
+    --primary-background-color-gray :#F8F8F8;
+    --primary-color-gray : #545454;
+    --primary-background-color-white :#FFFFFF;
+    --primary-color-light-black: #1E1E1E;
+    --primary-color-black:#000000;
+    --primary-color-gray-2 :#d9d9d9d9 ;
+
+    
+}
+
+*
+{
+    font-family:"poppins";
+    margin: 0;
+    padding: 0;
+    transition: 0.7s smooth;
+    box-sizing: border-box;
+    
+
+}
+
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-background-color-white);
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+header .logo 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+header .logo h1
+{
+    font-family: "Montserrat";
+    color: var(--primary-color-gray);
+    font-weight: 400;
+}
+header .logo h1 span
+{
+    color: var(--primary-color-light-black);
+    font-weight: 600;
+}
+
+
+header nav.navigation a
+{
+    text-decoration: none;
+    color: var(--praimary-color-d-gray);
+    font-weight: 400;
+    padding: 0.4rem;
+    margin: 0 2rem;
+}
+
+button 
+{
+    border: none;
+    color: var(--primary-background-color-white);
+    background-color: var(--primary-color-orange);
+    width: 8rem;
+    height: 2.3rem;
+    border-radius: 0.5rem;
+}
+
+
+.home
+{
+    background-color: var(--primary-background-color-white);
+    padding: 3rem;
+    
+}
+
+.home .home-container
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem;
+}
+
+.home .home-container .text-container h2
+{
+    color: var(--primary-color-orange);
+    font-weight: 600 ;
+}
+
+.home .home-container .text-container h1
+{
+    color: var(--primary-color-black);
+    font-weight: 700;
+    font-size: 5rem;
+    letter-spacing: 0.3rem;
+    margin-bottom: 1rem;
+
+}
+
+
+.home .home-container .text-container h1 span
+{
+    margin-left: 5rem;
+}
+
+.home .home-container .text-container p
+{
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+
+.home .home-container .image-container 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.home .home-container .image-container .line
+{
+    z-index: 900;
+    position: absolute;
+    margin-bottom: 20rem;
+}
+
+
+.home .home-container .image-container .icons
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.about-me
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    gap: 2rem;
+}
+.about-me .images-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me  .images-container :first-child
+{
+    z-index: 900;
+    position: absolute;
+    margin-bottom: 20rem;
+}
+
+.about-me  .text-container
+{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+}
+.about-me .text-container  .image-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+   /* margin-left: 5rem;*/
+}
+   
+.about-me  .text-container h1
+{
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+.about-me .text-container p
+{
+    width: 80%;
+}
+
+.Services
+{
+    margin: 2rem;
+}
+
+.Services .text-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+
+}
+
+.Services .text-container h1
+{
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+
+.Services .card-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+
+}
+
+.Services .card-container .card-text-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--primary-background-color-gray);
+    border-radius: 0.5rem;
+    
+
+}
+
+.Services .card-container .card-text-container p
+{
+    text-align: center;
+}
+
+
+.projects .text-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+.projects .text-container h1
+{
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.projects .text-container p
+{
+    text-align: center;
+    line-height: 1rem;
+    
+}
+
+
+.projects .card-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+.projects .buttons-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;  
+}
+
+
+.projects .buttons-container button
+{
+    background-color: var(--primary-background-color-gray);
+    color: var(--primary-color-black);
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary-color-gray);
+
+}
+
+#color-orange-button
+{
+    background-color: var(--primary-color-orange);
+    color: var(--primary-background-color-white);
+}
+
+.projects .card-container .card-1 .text-container :first-child,.projects .card-container .card-2 .text-container :first-child,.projects .card-container .card-3 .text-container :first-child
+{
+    color: var(--primary-color-orange);
+    font-weight: 400;
+
+
+}
+
+
+
+
+.testimonials
+{
+    margin: 3rem 0;
+}
+.testimonials .text-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    
+
+}
+.testimonials .text-container p 
+{
+    text-align: center;
+}
+
+.testimonials .text-container h1
+{
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+
+.testimonials .image-container
+{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+.testimonials .image-container  .left-side-content , .testimonials .image-container  .right-side-content 
+{
+    opacity: 0.3;
+
+}
+
+
+.empty-buttons
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+
+}
+.empty-buttons .dot
+{
+    width: 4rem;
+    height: 1rem;
+  
+    border-radius: 3rem;
+    background-color: var(--primary-color-gray-2);
+    /*opacity: 30%;*/
+
+    margin: 4px;
+
+}
+#color-orange
+{
+    background-color: var(--primary-color-orange);
+}
+
+
+.contact
+{
+    margin: 1.5rem;
+}
+
+.contact .text-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.contact .text-container h1
+{
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+
+}
+
+.contact .text-container p
+{
+    width: 60%;
+    text-align: center;
+}
+
+
+.contact .contact-form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.contact .contact-form :first-child
+{
+    background-color: var(--primary-background-color-gray);
+    border-radius: 0.3rem;
+    color: var(--primary-color-black);
+    border: 1px solid var(--primary-color-gray);
+    width: 20rem;
+    height: 2.2rem;
+
+}
+footer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--primary-background-color-gray);
+    margin-top: 2rem;
+}
+
+
+footer .logo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .text-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .rights-container
+{
+    background-color: var(--primary-color-gray);
+    color: var(--primary-background-color-white);
+    width: 100%;
+    text-align: center;
+    height: 3rem;
+}
+
+
+footer .icons
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+footer .logo h1
+{
+    font-family: "Montserrat";
+    font-weight: 400;
+     color: var(--primary-color-gray);
+}
+footer .logo h1 span
+{
+    font-weight: 600;
+    color: var(--primary-color-black);
+}
+
+
+footer .rights-container span
+{
+    color: var(--primary-color-orange);
+    
+}
+
+
+@media (max-width : 1439px)
+{
+    header 
+    {
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+    
+    header .navigation
+    {
+        display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+    }
+    .home
+    {
+        padding: 2rem;
+    }
+
+
+    .about-me .text-container .image-container
+    {
+        width: 70%;
+        flex: 1;
+
+    }
+    .about-me 
+    {
+        gap: 0;
+    }
+
+    .about-me .images-container 
+    {
+        flex: 1;
+    }
+    .about-me .images-container :first-child
+    {
+        display: none;
+    }
+    
+    .about-me .images-container :last-child
+    {
+        width: 20.5rem;
+    }
+    .about-me .text-container h1
+    {
+        font-size: 2rem;
+    }
+    /*.about-me
+    {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+    }*/
+
+    .about-me .text-container
+    {
+        align-items: center;
+    }
+    .about-me .text-container p
+    {
+        text-align: center;
+        line-height: 2rem;
+
+    }
+
+
+
+
+    .Services .text-container p
+    {
+        text-align: center;
+        line-height: 2rem;
+
+    }
+    .projects .card-container
+    {
+        flex-wrap: wrap;
+    }
+
+    .testimonials .image-container
+    {
+        flex-wrap: wrap;
+    }
+
+    .testimonials .image-container .left-side-content,.testimonials .image-container .right-side-content, .testimonials .image-container .main-img
+    {
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    .testimonials
+    {
+        text-align: center;
+    }
+}
+
+
+@media (max-width : 1024px)
+{
+    .home .home-container .text-container h1 
+    {
+        font-size: 3.5rem;
+    }
+    .home .home-container
+    {
+
+        flex-direction: column;
+
+    }
+    .home .text-container
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .home .home-container .text-container h1 span
+    {
+        margin-left: 0;
+    }
+    .home .home-container .text-container p
+    {
+        line-height: 2rem;
+        text-align: center;
+    }
+
+    .Services .card-container
+    {
+        flex-wrap: wrap;
+    }
+
+    .about-me .text-container .image-container 
+    {
+        align-items: center; 
+
+    }
+     .about-me
+    {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+    }
+   
+    .about-me .text-container .image-container img 
+    {
+        width: 80%;
+    }
+    .about-me .text-container .image-container
+    {
+        width: 90%;
+    }
+
+
+    
+}
+
+@media (max-width : 768px)
+{
+   
+    .home .home-container .image-container 
+        {
+            width: 80%;
+
+        }
+    
+    .about-me .text-container h1,.Services .text-container h1,.projects .text-container h1,.testimonials .text-container h1,.contact .text-container h1
+    {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .about-me .images-container img
+    {
+        width: 90%;
+    }
+    .about-me .images-container :first-child
+    {
+       /* width: auto;
+        margin-bottom: 12rem;*/
+        display: none;
+    }
+    
+    
+    
+    .testimonials .image-container
+    {
+        flex-direction: column;
+        
+    }
+    .testimonials .image-container .left-side-content,.testimonials .image-container .main-img ,.testimonials .image-container .right-side-content
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .testimonials .image-container .left-side-content p,.testimonials .image-container .main-img p,.testimonials .image-container .right-side-content p 
+    {
+        text-align: center;
+    }
+
+    
+    
+    .projects .buttons-container 
+    {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width : 570px)
+{
+    .projects .card-container .card-1 .image-container  ,.projects .card-container .card-2 .image-container  ,.projects .card-container .card-3 .image-container 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+
+@media (max-width : 532px)
+{
+    .projects .card-container .card-1 .image-container img ,.projects .card-container .card-2 .image-container img ,.projects .card-container .card-3 .image-container img 
+    {
+        width: 90%;
+    }
+
+  
+   
+}
+
+@media (max-width : 527px)
+{
+    footer .text-container
+    {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width : 500px)
+{
+    .home .home-container .image-container :first-child
+    {
+        display: none;
+    }
+    .home .home-container .image-container img
+    {
+        width: 120%;
+    }
+    .home .home-container
+    {
+        padding: 0.5rem;
+    }
+    header .navigation
+    {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width : 425px)
+{
+    .home
+    {
+        padding: 0;
+    }
+    .about-me
+    {
+        padding: 1rem;
+    }
+    .home .home-container .text-container h1
+    {
+        font-size: 2.8rem;
+    }
+ 
+}
+
+@media (max-width :375px)
+{
+    .contact .contact-form
+    {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact .contact-form :first-child
+    {
+        width: 15rem;
+    }
+}
+
+
+@media (max-width :320px)
+{
+    .about-me
+    {
+        padding: 0;
+    }
+    .about-me .images-container :last-child
+    {
+        width: 18rem;
+    }
+    .home .home-container .image-container img
+    {
+        width: 100%;
+    }
+    .Services .text-container
+    {
+        padding: 0;
+    }
+   
+}
+
+
+
+
